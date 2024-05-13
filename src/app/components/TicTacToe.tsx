@@ -43,7 +43,7 @@ const TicTacToe: React.FC = () => {
   const renderCell = (i: number) => {
     return (
       <button
-        className="w-16 h-16 border border-gray-500 flex justify-center items-center text-3xl font-bold focus:outline-none"
+        className='w-16 h-16 border border-gray-500 flex justify-center items-center text-3xl font-bold focus:outline-none'
         onClick={() => handleClick(i)}
       >
         {board[i]}
@@ -58,13 +58,13 @@ const TicTacToe: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col object-fit items-center justify-center place-content-center">
-      <div className="grid grid-cols-3 gap-4 bordr-2 ">
+    <div className='flex flex-col object-fit items-center justify-center place-content-center'>
+      <div className='grid grid-cols-3 gap-4 bordr-2'>
         {board.map((cell, index) => (
           <div key={index}>{renderCell(index)}</div>
         ))}
       </div>
-      <div className="mt-4 self-center px-4 py-2 gap-4 item-center justify-between">
+      <div className='mt-4 self-center px-4 py-2 gap-4 item-center justify-between'>
         {winner ? (
           <div className='bg-black flex-wrap py-4 px-2 gap-4 border-1 rounded-md justify-center item-center'>
             {winner === 'Draw' ? (
@@ -73,7 +73,7 @@ const TicTacToe: React.FC = () => {
               <p className='text-xl font-semibold text-green-300 place-content-center justify-self-center'>Player {winner} wins!</p>
             )}
             <button
-              className="px-4 py-2 gap-4 border-1 bg-blue-500 text-white rounded-md mt-2 justify-between item-center"
+              className='px-4 py-2 gap-4 border-1 bg-blue-500 text-white rounded-md mt-2 justify-between item-center'
               onClick={resetGame}
             >
               Reset Game

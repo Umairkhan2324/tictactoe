@@ -1,5 +1,5 @@
 import React from 'react'
-import TicTacToe from './components/TicTacToe'
+import TicTacToe from './components/TicTacToe';
 const page: React.FC = () => {
   return (
     <><div className='flex flex-col overflow-scroll bg-cover bg-center bg-no-repeat h-screen py-10 px-5' style={{ backgroundImage: "url('/bg.jpg')" }}>
